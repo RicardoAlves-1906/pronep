@@ -1,0 +1,153 @@
+body {
+background-color: blue;
+}
+/* nav e banner video */
+/* Remove margem padrão */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Seção do banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Vídeo ocupa toda a tela */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Conteúdo sobre o vídeo */
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Leve sobreposição para contraste */
+}
+
+/* Logotipo */
+.logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Título */
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* fim nav */
+
+/* inicio banner */
+
+/* blocos */
+/* Container opcional para centralizar */
+
+#blocos {
+    position: absolute;
+    top: 709px;
+    left: 100px;
+    z-index: 4;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Card (article) */
+.card {
+  width: 300px;
+  background-color: rgba(22,54,57,0.75); /* azul meio transparente */
+  color: #84d00a; /* título e ícone verdes */
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  top: 70px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  height: 200px;
+  }
+
+  .card:hover {
+    background-color: #84d00a; /* verde sólido */
+    color: #004488; /* muda o texto principal pra azul */
+    top: -50px;
+    opacity: 1;
+  }
+
+  #conteudotab {
+    position: relative;
+    z-index: 5;
+    background-color: #2D4803;
+
+    }
+
+/* Cabeçalho do card: ícone + título */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Ícone */
+.icon {
+  font-size: 1.8rem;
+  transition: color 0.4s;
+}
+
+/* Título */
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: color 0.4s;
+}
+
+/* Conteúdo oculto inicialmente */
+.card-content {
+  margin-top: 15px;
+  display: none;
+  color: #2D4803; /* verde escuro */
+  transition: opacity 0.4s;
+}
+
+/* Link */
+.card-content a {
+  color: #2D4803;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* HOVER */
+
+/* Mostra conteúdo no hover */
+.card:hover .card-content {
+  display: block;
+}
+
+/* Ícone e título mudam de cor no hover */
+.card:hover .icon,
+.card:hover .card-title {
+  color: #004488; /* azul */
+}
+
+
