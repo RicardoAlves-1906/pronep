@@ -1,6 +1,4 @@
-body {
-background-color: blue;
-}
+
 /* nav e banner video */
 /* Remove margem padrão */
 body, html {
@@ -16,6 +14,13 @@ body, html {
   height: 100vh;
   overflow: hidden;
 }
+
+#bd {
+  transition: color 0.3s ease;
+}
+  #bd:hover{
+    border-color: #7ff548 !important;
+  }
 
 /* Vídeo ocupa toda a tela */
 .video-bg {
@@ -75,13 +80,14 @@ body, html {
 /* Card (article) */
 .card {
   width: 300px;
+  align-items: center;
   background-color: rgba(22,54,57,0.75); /* azul meio transparente */
   color: #84d00a; /* título e ícone verdes */
   padding: 20px;
   border-radius: 8px 8px 0 0;
   overflow: hidden;
   position: relative;
-  top: 70px;
+  top: 50px;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   height: 200px;
@@ -97,9 +103,13 @@ body, html {
   #conteudotab {
     position: relative;
     z-index: 5;
-    background-color: #2D4803;
+    background-image: url(/imagens/choosing-bg.jpg);
+    height: 700px;
+  
+  }
 
-    }
+ 
+
 
 /* Cabeçalho do card: ícone + título */
 .card-header {
@@ -149,5 +159,147 @@ body, html {
 .card:hover .card-title {
   color: #004488; /* azul */
 }
+/* fim dos cards */
+
+/* tabs(O PROGRAMA)  */
+#op {
+ display: inline-flex;
+ margin-left: 250px;
+ text-align: center;
+ 
+
+    
+    width: 20px; 
+    height: 20px; 
+    background-color: rgb(38, 109, 5); 
+    border: 2px solid rgb(119, 250, 67); 
+}
+
+#tabs {
+  text-align: center;
+}
+
+  
+#tabs ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#tabs ul li {
+  display: block;
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#tabs ul li a {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: 0;
+  padding-bottom: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+#tabs ul li a:after {
+    transition: all 0.3s;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+}
+#tabs ul li a:before {
+    transition: all 0.3s;
+    width: 25px;
+    height: 25px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -5px;
+}
+#tabs ul li span {
+  display: block;
+  margin-bottom: 0.75em;
+}
+/* #tabs ul .ui-tabs-active {
+}
+#tabs ul .ui-tabs-active a {
+  color: #85CF12;
+} */
+#tabs ul .ui-tabs-active a:after {
+  background-color: #85CF12;
+  width: 15px;
+  height: 15px;
+}
+#tabs ul .ui-tabs-active a:before {
+  border-color: #85CF12;
+}
+#tabs h4 {
+    margin-top: 60px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#tabs p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+/* CONTINUAR TESTE HOVER EM METODOLOGIA */
+
+#op {
+  text-decoration: none;
+  transition: color 0.3 ease;
+}
+
+ #op:hover {
+  border-color: #7ff548 !important;
+
+ }
+
+ /* banner relogio */
+
+ #imgturma {
+    position: relative;
+    z-index: 5;
+    background-image: url(/imagens/coming-soon-bg.jpg);
+    height: 680px;
+    
+    
+  }
 
 
+
+ .right-content {
+  
+  float: right;
+
+ }
+
+ .value {
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  justify-items: center;
+ }
+
+ #contact1, #contact2 {
+  background-color: ; 
+  opacity: ;
+
+}
